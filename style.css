@@ -1,0 +1,129 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.loading {
+    background: #ddd;
+    height: 300px;
+}
+
+a, a:hover {
+    color: white;
+}
+
+#alert-bar {
+	background: #DD1E36;
+	color: white;    
+}
+
+h1, h2, h3 { text-align: center; }
+
+h1 { font-size: 1.75em; }
+
+h2 { font-size: 1.3em; }
+
+h3 { font-size: 1em; }
+
+p { margin-block: 0; }
+
+hr, i { color: black; }
+
+hr { align-self: stretch; }
+
+code {
+    background: #16222c;
+    color: white;
+	padding: 0.75em;
+	margin-top: 0.5em;
+	display: block;
+}
+
+i.icon {
+	font-family: "bootstrap-icons";
+	font-weight: 100;
+	font-style: normal;
+	position: relative;
+	top: 2px;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 1.5em;
+	font-family:"Montserrat";
+	color: #004c88;	
+}
+
+.message {
+	padding: 1em;
+	background: #314555;
+	color: white;		
+}
+
+.state {
+	padding: 0.5em;
+	border-radius: 5px;
+	font-size: 0.95em;
+	text-transform: uppercase;	
+	text-align: center;
+	color: white;
+}
+
+.state i.icon {
+	padding-left: 5px;
+	color: inherit;
+}
+
+.state-0 { background: #076838; color: white; }
+
+.state-1 { background: #076838; color: white; }
+
+.state-2 { background: #fcd000; color: black; }
+
+.state-3 { background: #e8000d; color: white; }
+
+.state-error { background: grey; color: white; }
+
+.uptime {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.graph { position: relative; }
+
+.percent {
+	position: absolute;
+	top: 30%;
+    left: 22%;
+	color: #2c456a;
+}
+
+.int { font-size: 2.5em; }
+
+.dec { font-size: 1.5em; }
+
+svg {
+  height: 175px;
+  transform: rotate(-90deg);
+  width: 175px;
+}
+
+.graph-background {
+  fill: none;
+  stroke: #e2eff0;
+  stroke-width: 2.5;
+}
+
+.graph-progress {
+  fill: none;
+  stroke: #076838;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-width: 2.5;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.hidden {
+	display: none;
+}
